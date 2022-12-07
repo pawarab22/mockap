@@ -74,7 +74,7 @@ function Users() {
                             return (
                                 <tr key={i}>
                                     <td>
-                                        <Link className='btn btn-primary' to="/edit/1"><i className="fa fa-pencil-square-o" aria-hidden="true"></i></Link> &nbsp;
+                                        <Link className='btn btn-primary' to={"/edit/" +user.id}><i className="fa fa-pencil-square-o" aria-hidden="true"></i></Link> &nbsp;
                                         <Button variant="danger" onClick={(e) => { confirmDeleteUser(e, user.id) }}><i className="fa fa-trash"></i></Button>
                                     </td>
                                     <td>{i + 1}</td>
